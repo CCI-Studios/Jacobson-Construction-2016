@@ -1,0 +1,17 @@
+name = Feature views
+core = 7.x
+package = Features
+dependencies[] = image
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[image][] = catalogue
+features[image][] = catalogue_detail
+features[image][] = catalogue_thumbnail
+features[image][] = gallery
+features[views_view][] = catalogue_detail
+features[views_view][] = catalogue_page
+features[views_view][] = gallery_images
+features[views_view][] = gallery_page
+features[views_view][] = slideshow
+features_exclude[dependencies][ctools] = ctools

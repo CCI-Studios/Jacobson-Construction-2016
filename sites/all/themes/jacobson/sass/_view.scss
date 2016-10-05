@@ -1,0 +1,530 @@
+.view-slideshow{
+
+
+	h1{
+		font-size: 2.2em;
+		max-width: 500px;
+		margin: 0 auto;
+		margin-top: 30px;
+		color: white;
+		text-transform: inherit;
+	}
+
+	.views-row{
+		position: relative;
+	}
+
+	.views-field-body{
+		height: auto!important;
+	    position: absolute;
+		top: 45%;
+		left: 50%;
+		text-align: center;
+		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+
+		img{
+			margin: 0 auto;
+		}
+	}
+
+	.backbg{
+
+		padding-bottom: 14px;
+	}
+}
+
+.slick-dots{
+
+	display: block;
+	position: absolute;
+	bottom: 150px;
+	width: 100%;
+	text-align: center;
+
+	li{
+
+		display: inline-block;
+		padding-right: 10px;
+
+		button{
+
+			@extend .hide-text;
+			background: white;
+			width: 10px;
+			height: 10px;
+			border: 0px;
+			cursor: pointer;
+		}
+	}
+
+	.slick-active button{
+
+		background: $darkgrey;
+	}
+}
+
+.view-gallery-page{
+	
+	.views-row{
+
+		display: inline-block;
+		text-align: center;
+		padding: 15px 10px;
+		position: relative;
+
+		.views-field-field-gallery-cover  a{
+
+			display: block;
+			position: relative;
+			height: 300px;
+			border: 1px solid $darkgrey;
+
+			&:before{
+
+				content: "";
+				@extend .outer-border;
+				border-color: $darkgrey;
+			}
+
+			img{
+
+				.not-front .region-content &{
+
+					padding: 0px;
+				}
+			}
+				
+		}
+
+		&:hover{
+
+			.views-field-path{
+
+				display: block;
+
+				a:hover
+				{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.views-field-title{
+
+		text-transform: uppercase;
+		color: black;
+		padding: 20px 0px;
+		font-size: 1.3em;
+	}
+
+	.views-field-path{
+
+		display: none;
+		position: absolute;
+		top: 150px;
+		text-align: center;
+		width: 93%;
+
+		a{
+			display: inline-block;
+			padding: 10px;
+			background: white;
+			position: relative;
+			border: 1px solid white;
+
+			&:before{
+
+				content: "";
+				@extend .outer-border;
+				border-color: white;
+			}
+		}
+	}
+}
+
+
+.view-gallery-images{
+
+	position: relative;
+
+	.item-list .pager
+	{
+		padding: 50px 0px 0px;
+	}
+
+	.views-row{
+
+		width: 33.2%;
+		
+		div{
+
+			width: 100%;
+		}
+
+		img{
+
+			width: 100%;
+			height: auto;
+
+			.not-front .region-content &{
+
+				padding: 0px;
+			}
+			
+		}
+
+		.swipebox a{
+
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			z-index: 1;
+
+			&:hover:after{
+
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: calc(100% - 5px);
+				box-shadow: 500px 500px 500px rgba(0,0,0,0.5) inset;
+	
+			}
+		}
+
+
+		blockquote{
+
+			display: none;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			text-align: center;
+			top: 45%;
+			font-size: 18px;
+			color: white;
+		}
+
+		&:hover{
+
+			blockquote{
+
+				display: block;
+				z-index: 1
+			}
+
+		}
+	}
+}
+
+.view-catalogue-page,
+.view-catalogue-detail{
+
+	.view-header{
+
+		text-align: left;
+	}
+}
+
+.view-catalogue-page{
+
+	position: relative;
+
+	.view-filters{
+
+		position: absolute;
+		top: 0;
+		right: 0;
+
+	}
+
+	.views-exposed-form{
+
+		label{
+
+			float: left;
+			text-transform: uppercase;
+			padding-right: 20px;
+		}
+
+		.views-exposed-widget .form-submit{
+
+			margin-top: 0px;
+			background: transparent;
+			border: 1px solid $darkgrey;
+			padding: 5px 20px;
+			cursor: pointer;
+			color: $darkgrey;
+
+			&:hover
+			{
+				color: black;
+			}
+		}
+
+		.views-submit-button
+		{	
+			position: relative;
+			padding: 0px;
+
+			&:after{
+
+				content: "";
+				@extend .outer-border;
+				z-index: -1;
+			}
+		}
+	}
+
+	.pager{
+
+		margin: 0.75em;
+	}
+
+	.views-field-nothing{
+
+		display: none;
+		position: absolute;
+		top: 135px;
+		width: 156px;
+	 	left: 50%;
+	 	transform: translateX(-50%);
+	 	-webkit-transform: translateX(-50%);
+	 	-moz-transform: translateX(-50%);
+
+	 	.button
+	 	{
+	 		margin-top: 0px;
+	 	}
+	}
+
+	.views-field-field-image-catalogue{
+
+		margin: 0 auto;
+
+		a{
+			display: inline-block;
+			position: relative;
+		}
+
+		img{
+			height: auto;
+			padding: 0px;
+			margin-bottom: -5px;		
+		}
+	}
+
+	.views-row{
+
+		display: inline-block;
+		position: relative;
+		vertical-align: top;
+		margin: 20px 13px;
+		text-align: center;
+
+		.button{
+
+			background: white;
+		}
+
+		&:hover .views-field-field-image-catalogue a{
+
+			opacity: 0.5;
+
+			&:after,
+			&:before{
+
+				content: "";
+				@extend .outer-border;
+			}
+
+			&:before{
+
+				top: -5px;
+				left: -5px;
+				bottom: -5px;
+				right: -5px;
+			}
+		}
+
+		&:hover{
+
+			.views-field-nothing{
+
+				display: block;
+			}
+		}
+	}
+
+	.views-field-title{
+
+		font-size: 1.3em;
+		text-transform: uppercase;
+		color: black;
+		padding-top: 20px;
+	}
+
+	.views-field-field-style{
+
+		font-size: 1em;
+	}
+}
+
+
+.view-catalogue-detail{
+
+	.field-slideshow{
+
+		margin: 0 auto;
+		z-index: -1;
+	}
+
+	img{
+
+		vertical-align: middle;
+
+		.not-front .region-content &{
+
+				padding: 0px;
+		}
+	}
+
+	.button{
+
+		padding: 5px 45px;
+	}
+
+	.field-slideshow-pager{
+
+		li{
+
+			margin: 0px;
+			padding: 10px 10px;
+
+		}
+
+		a:after
+		{
+			content: "";
+		}
+
+		li.activeSlide a:after,
+		li a:hover:after
+		{
+			@extend .outer-border;
+		}
+
+		a{
+
+			position: relative;
+			display: inline-block;
+			border: 1px solid $darkgrey;
+		}
+	}
+
+	.field-slideshow-slide{
+
+		img{
+
+			vertical-align: middle;
+		}
+	}
+
+	.field-slideshow-wrapper{
+
+		position: relative;
+	}
+
+	.field-slideshow-controls a{
+
+		height: 40px;
+		width: 22px;
+		display: inline-block;
+		position: absolute;
+		top: 155px;
+		z-index: 1;
+		@extend .hide-text;
+	}
+
+	.item-list{
+
+		padding: 50px 0px;
+	}
+
+	#field-slideshow-1-pager{
+
+		margin-bottom: 0px;
+	}
+
+	.image-catalogue,
+	.price,
+	.description,
+	.specs{
+
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.description{
+
+		width: 50%;
+		padding-right: 30px;
+	}
+
+	.specs{
+
+		width: 40%;
+
+		span{
+
+			width: 100px;
+			display: inline-block;
+			padding-right: 10px;
+			vertical-align: top;
+		}
+
+		span:first-child + span{
+
+			width: auto;
+			max-width: 250px;
+			display: inline-block;
+		}
+
+		p{
+			padding-bottom: 10px;
+		}
+	}
+
+	.image-catalogue{
+
+		width: 60%;
+	}
+
+	.price{
+
+		width: 20%;
+		margin-top: 95px;
+		position: relative;
+		padding-left: 100px;
+	}
+
+	.prev{
+
+		left: 0px;
+		background: url(../images/left-arrow.png) no-repeat;
+	}
+
+	.next{
+
+		right: 0px;
+		background: url(../images/right-arrow.png) no-repeat;
+	}
+
+}

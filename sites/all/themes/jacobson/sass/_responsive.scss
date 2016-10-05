@@ -1,0 +1,565 @@
+
+@media screen and (max-width: 1120px){
+
+	#block-block-1
+	{
+
+		.content{
+
+			max-height: 510px;
+			overflow: hidden;
+			text-align: center;
+
+			div{
+
+				width: 31.33%;
+				vertical-align: top;
+				padding:0px 5px;
+
+				img{
+
+					height: auto;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 920px){
+
+	#block-block-2,
+	#block-block-3{
+
+		.content{
+
+			max-width: 300px;
+		}
+	} 
+
+	.view-catalogue-detail 
+	{	
+		.field-slideshow
+		{
+			max-width: 300px;
+		}
+
+		.field-slideshow-controls a
+		{
+			top: 106px;
+		}
+
+		.price
+		{
+			margin-top: 44px;
+		}
+	}
+
+	.view-gallery-page
+	{
+		text-align: center;
+
+		.views-field-path
+		{
+			width: 100%;
+		}
+	}
+   
+}
+
+@media screen and (max-width: 860px){
+
+	.page-node
+	{
+		.image
+		{	
+			img
+			{
+			  	width: 300px;
+			    height: auto;
+			}
+		  
+		}
+	}
+
+	.front #block-system-main .field-name-body .field-item div
+	{
+		padding-top: 50px;
+	}
+}
+
+@media screen and (min-width: 768px){
+
+	#navigation .region-navigation{
+
+		display: block!important;
+	}
+}
+
+@media screen and (max-width: 767px){
+
+	h2{
+
+		font-size: 1.8em;
+	}
+
+	#navigation{
+
+		border-bottom: 1px solid #ccc;
+		position: relative;
+
+		ul.menu li{
+
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+	}
+
+	#logo img{
+
+		padding: 10px 0px;
+	}
+
+	#block-block-1{
+
+		padding: 0px 10px;
+
+		.content
+		{
+			max-height: inherit;
+		}
+
+		.content div{
+
+			width: 300px;
+			display: block;
+			margin: 0 auto;
+			padding-right: 0px;
+
+			img
+			{
+				height: auto;
+			}
+		}
+	}
+
+	.view-gallery-page .views-row .views-field-field-gallery-cover a img,
+	.view-catalogue-detail img,
+	.view-gallery-page .views-row img{
+
+		width: auto!important;
+	 	padding: 0px!important;
+
+	}
+
+	.view-gallery-page
+	{
+		.views-row
+		{
+			padding: 20px 0px;
+		}
+	}
+
+	.view-gallery-images{
+
+		.views-row{
+
+			width: 100%;
+			.not-front .region-content &{
+
+				img{
+
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.view-catalogue-detail{
+
+		.prev{
+
+			left: 10px;
+		}
+
+		.next{
+
+			right: 10px;
+		}
+
+		 .field-slideshow-slide{
+
+		 	line-height: inherit;
+	 	}
+
+		.field-slideshow-pager li{
+
+			margin: 10px 0px;
+		}
+
+		 .field-slideshow{
+
+		 	z-index: -1;
+		 	width: 100%;
+		 }
+
+		 .price,
+		 .specs,
+		 .description{
+
+		 	width: auto;
+		 	margin-top: 20px;
+		 	padding-left: 0px;
+		 }
+
+		 .image-catalogue{
+
+		 	width: 100%;
+		 }
+
+		  .field-slideshow-controls a{
+
+		  	top: 25%;
+		  }
+	}
+
+	.view-catalogue-page{
+
+		.view-filters{
+
+			position: relative;
+		}
+
+		.views-row{
+
+			display: block;
+			width: auto;
+			padding-bottom: 20px;
+
+			.not-front .region-content &{
+
+				img{
+
+					padding: 0px;
+					width: auto;
+				}
+			}
+		}
+	}
+
+	#block-block-7{
+
+		.content div{
+
+			width: auto;
+			display: block;
+			padding-bottom: 20px;
+
+			img{
+
+				width: auto;
+				padding: 0px;
+			}
+		}
+	}
+
+	#mobile-menu,
+	#logo,
+	.region-navigation{
+
+		display: inline-block;
+		width: 32.20%;
+		float: none;
+		text-align: center;
+		vertical-align: middle;
+		padding: 10px 0px;
+	}
+
+	#block-menu-menu-social-menu{
+
+		width: auto;
+		float: none;
+		padding-right: 0px;
+
+		ul.menu{
+
+			text-align: right;
+		}
+	}
+
+	#block-system-main-menu{
+
+		display: none;
+		position: absolute;
+		z-index: 2;
+		background: white;
+		left: 0;
+		top: 71px;
+		width: 100%;
+
+		li.expanded{
+
+			&:hover ul.menu
+			{
+				display: none;
+			}
+
+			ul.menu{
+
+				position: static;
+				text-align: center;
+				font-size: 16px;
+				width: auto;
+
+				li a
+				{
+					padding: 20px 0px;
+				}
+			}
+
+			& > .nolink,
+			&>a{
+
+				border-bottom: 1px solid #ccc;
+				padding: 20px 0px;
+				background-position: right center;
+			}
+		} 
+
+		.content > ul.menu > li{
+
+			display: block;
+			list-style: none;
+
+			a{
+				border-bottom: 1px solid #ccc;
+				padding: 20px 0px;
+			}
+
+			&:after{
+
+				display: none;
+			}
+		}
+	}
+	
+	#block-block-15{
+		
+		img{
+
+			width: 300px;
+			height: auto;
+		}
+	} 
+
+
+	.backbg{
+
+		height: 600px;
+		padding: 0px!important;
+	}
+
+	.slick-dots{
+
+		bottom: 180px;
+	}
+
+	#mobile-menu{
+
+		font-size: 0px;
+		color: transparent;
+
+		a{	
+			padding: 0px 10px;
+			background: url(../images/menu-icon.png) no-repeat;
+			background-position: center;
+			display: block;
+			width: 20px;
+			height: 20px;
+		}
+
+	}
+
+	.slick-prev{
+
+		left: 10px;
+	}
+
+	.slick-next{
+
+		right: 10px;
+	}
+
+	.view-slideshow h1{
+
+		max-width: 240px;
+		font-size: 1.7em;
+	}
+
+	#block-block-2{
+
+		border-right: 0px;
+		border-bottom: 2px solid white;
+	}
+
+	#block-block-2,
+	#block-block-3{
+
+		width: 100%;
+		display: block;
+
+		.content{
+
+			max-width: 280px;
+			padding: 60px 0px;
+		}
+	}
+
+	#block-block-4 .content > div{
+
+		div span{
+
+			font-size: 12px;
+		}
+
+	 	div > span{
+
+	 		&:first-child{
+
+	 			border-right: 0px;
+	 			padding-bottom: 10px;
+	 		}
+
+	 		display: block;
+	 	}
+
+		 div:first-child,
+		 div div{
+
+		 	font-size: 12px;
+	 		padding: 10px;
+		 	float: none;
+		 	display: block;
+		 }
+
+		div:first-child + div + div{
+
+			float: none;
+			display: block;
+			padding: 10px 0px;
+			padding-right: 0px;
+		}
+		
+	}
+
+	#node-9{
+		padding-top: 0px;
+	}
+
+	.page-node-9 #block-system-main,
+	#block-webform-client-block-10{
+
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 720px){
+
+.page-node
+{
+	.image
+	{
+		text-align: center;
+	}
+	img
+	{
+		float: none!important;
+	}
+}
+
+#block-block-8 .section,
+.section
+{
+	width: auto;
+	padding-right: 0px;
+}
+
+.front #block-system-main{
+
+	width: auto;
+
+	.field-name-body .field-item div{
+
+		display: block;
+		width: auto;
+		margin: 0 auto;
+		padding: 20px 0px;
+		text-align: center;
+
+		p,h2
+		{
+			text-align: left;
+		}
+	}
+
+	img{
+
+		width: 300px;
+		height: auto;
+		padding-bottom: 20px;
+		float: none!important;
+	}
+
+}
+
+.not-front .region-content{
+
+		.content img{
+
+			width: 300px;
+			height: auto;
+			padding: 20px 0px;
+		}
+
+		.section{
+
+			text-align: center;
+			width: auto;
+		    float: none!important;
+
+			h2,p
+			{
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 520px){
+
+	.not-front .region-content
+	{
+
+		.content img
+		{
+			width: 100%;
+		}
+	}
+
+	#block-block-1 .content div
+	{
+		width: auto;
+	}
+
+	.front #block-system-main
+	{
+
+		width: auto;
+
+		.field-name-body .field-item div
+		{
+			img
+			{
+				width: 100%;
+			}
+		}
+	}
+}

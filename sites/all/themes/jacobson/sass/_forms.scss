@@ -1,0 +1,95 @@
+.webform-client-form
+{	
+
+	max-width: 850px;
+	margin: 0 auto;
+
+	input,
+	textarea
+	{
+		font-size: 18px;
+		padding: 15px 10px;
+		border: 1px solid #ccc;
+		position: relative;
+	}
+
+	.form-actions
+	{	
+		text-align: center;
+		position: relative;
+		width: 150px;
+		border: 1px solid $darkgrey;
+		margin-top: 15px;
+
+		&:after{
+
+			content: "";
+			@extend .outer-border;
+			z-index: -1;
+		}
+	}
+
+	.form-item
+	{
+		position: relative;
+	}
+
+	.webform-submit
+	{	
+		color: $darkgrey;
+		background: white;
+		border: 0px;
+		width: 100%;
+		padding: 10px;
+		text-transform: uppercase;
+		cursor: pointer;
+		position: relative;
+
+		&:hover
+		{
+			color: black;
+		}
+	}
+
+	.webform-component-textarea
+	{
+		clear: left;
+		width: 98%;
+
+		&+p
+		{
+			display: none;
+		}
+
+		textarea{
+
+			width: 98%;
+		}
+	}
+
+	::-webkit-input-placeholder
+ 	{ 
+ 		color:$darkgrey; 
+ 		font-size: 16px;
+ 	}
+	::-moz-placeholder 
+	{ 
+		color:$darkgrey;
+		font-size: 16px;
+ 	} /* firefox 19+ */
+	:-ms-input-placeholder 
+	{ 
+		color:$darkgrey; 
+		font-size: 16px;
+	} /* ie */
+	input:-moz-placeholder 
+	{ 
+		color:$darkgrey; 
+		font-size: 16px;
+	}
+
+	input
+	{
+		width: 91%;
+	}
+}
